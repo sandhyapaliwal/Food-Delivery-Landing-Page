@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Utility Classes */
+.img-responsive { 
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Hero Section */
+.hero_image { 
+    background: url(food5.jpeg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero_wrapper { 
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.hero_wrapper h1 {  
+    font-size: 2.4rem; 
+    margin-bottom: 1rem;
+}
+
+.hero_wrapper p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.form_code { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_code .post_code {  
+    width: 100%; 
+    padding: 0.8rem;
+    border-radius: 8px; 
+    border: 1px solid #ccc; 
+    outline: none;
+    margin-bottom: 0.8rem;
+}
+
+.form_code button { 
+    width: 100%;  
+    background-color: #00bab1; 
+    color: white;
+    padding: 0.8rem;
+    border: none; 
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.form_code button:hover {
+    background-color: #008a84;
+}
+
+/* Product Section */
+.product { 
+    width: 90%;
+    max-width: 1100px;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product_list { 
+    flex: 1 1 calc(33.33% - 1rem); /* 3-column layout */
+    max-width: 300px;
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product_list:hover {
+    transform: translateY(-5px);
+}
+
+.product_list h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.product_list p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero_wrapper {
+        padding: 1.5rem;
+    }
+
+    .hero_wrapper h1 {
+        font-size: 2rem;
+    }
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product_list {
+        width: 100%;
+        max-width: 400px;
+    }
+}
